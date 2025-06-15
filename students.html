@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Members Page</title>
+    <link rel="stylesheet" href="students.css">
+    
+</head>
+<body>
+
+
+    <!-- Navigation -->
+<nav class="main-nav">
+    <div class="brand">
+        <a href="index.html" class="brand-link" title="Go to homepage">
+      <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="Logo" class="logo" />
+      <div class="brand-text">
+        <span class="brand-title">Indian Institute of Technology</span>
+        <span class="brand-subtitle">Medical Physics</span>
+      </div>
+      </a>
+    </div>
+
+    
+<!-- Hamburger icon (only visible on mobile) -->
+<button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+
+    <ul class="nav-menu">
+      <li><a href="index.html#about">About</a></li>
+      <li class="dropdown">
+        <a href="#courses">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#people">People</a>
+        <ul class="dropdown-menu">
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="students.html">Students</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+
+
+
+<!-- Side Navigation Overlay (Mobile Only) -->
+<aside class="mobile-sidenav" id="mobileSidenav" aria-hidden="true">
+  <div class="sidenav-header">
+    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="Logo" class="sidenav-logo" />
+    <div>
+      <div class="sidenav-title">Indian Institute of Technology</div>
+      <div class="sidenav-subtitle">Medical Physics</div>
+    </div>
+    <button class="sidenav-close" id="sidenavClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav class="sidenav-menu" aria-label="Mobile Navigation">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li>
+        <button class="sidenav-dropdown-btn" aria-expanded="false">Courses</button>
+        <ul class="sidenav-dropdown-list">
+          <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="sidenav-dropdown-btn" aria-expanded="false">People</button>
+        <ul class="sidenav-dropdown-list">
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="students.html">Students</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+  <div class="sidenav-footer">
+    <a href="https://www.iith.ac.in/" target="_blank" class="sidenav-footer-logo-link" aria-label="Visit IIT Hyderabad">
+    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="IIT Hyderabad Logo" class="sidenav-footer-logo" />
+  </a>
+  <div class="sidenav-connect-title">Connect With Us</div>
+  <hr class="sidenav-footer-divider" />
+  <div class="sidenav-socials">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="sidenav-social"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="sidenav-social"><i class="fa fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="sidenav-social"><i class="fa fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="sidenav-social"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <div class="sidenav-copyright">
+    © 2025 IIT Hyderabad | Medical Physics<br>
+    Designed &amp; Developed by Niladri Karmakar
+  </div>
+</div>
+
+</div>
+
+</aside>
+<!-- Overlay for darkening background -->
+<div class="sidenav-overlay" id="sidenavOverlay"></div>
+
+
+
+    <!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+       <div class="welcome-message">
+            <h1>Welcome to Medical Physics</h1>
+            <p>Indian Institute of Technology, Hyderabad</p>
+            <div class="members">
+    <h2 class="title">MSc Medical Physics Students</h2>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Year Scrollbar Navigation -->
+    <div class="year-scrollbar-container">
+    <button class="year-scrollbar-arrow left" aria-label="Previous Year">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    </button>
+    <div class="year-scrollbar">
+        <!-- Year buttons will be injected by JS -->
+    </div>
+    <button class="year-scrollbar-arrow right" aria-label="Next Year">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    </button>
+</div>
+
+
+
+    <div class="members-container">
+        <!-- Members for 2024 -->
+        <div class="members-list" data-year="2024">
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/adith.jpg" alt="Adith Francis K">
+                </div>
+                <div class="member-info">
+                    <h3>Adith Francis K</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14001</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/Alvin.jpg" alt="Alvin Vijay V S">
+                </div>
+                <div class="member-info">
+                    <h3>Alvin Vijay V S</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14002</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/Arshad.jpg" alt="Arshad Harith">
+                </div>
+                <div class="member-info">
+                    <h3>Arshad Harith</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14003</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/arshida.jpg" alt="Arshidha P K">
+                </div>
+                <div class="member-info">
+                    <h3>Arshidha P K</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14004</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/renuka.jpg" alt="Renuka Sonawane">
+                </div>
+                <div class="member-info">
+                    <h3>Renuka Sonawane</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14006</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/sandeep.jpg" alt="Sandeep Rajansingh Reswal">
+                </div>
+                <div class="member-info">
+                    <h3>Sandeep Rajansingh Reswal</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14007</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/sreelakshmi.jpg" alt="Sree Lakshmi Nk">
+                </div>
+                <div class="member-info">
+                    <h3>Sree Lakshmi Nk</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14009</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/shamil.jpg" alt="Muhammed Shamil">
+                </div>
+                <div class="member-info">
+                    <h3>Muhammed Shamil</h3>
+                    <p><strong>Enrollment Number:</strong> MP24MSCST14010</p>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Members for 2023 -->
+        <div class="members-list" data-year="2023">
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/Aindrila.jpg" alt="Aindrila Chowdhury">
+                </div>
+                <div class="member-info">
+                    <h3>Aindrila Chowdhury</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14001</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/athulya.jpg" alt="Athulya Prasannan">
+                </div>
+                <div class="member-info">
+                    <h3>Athulya Prasannan</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14002</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/henaz.jpg" alt="Henaz S">
+                </div>
+                <div class="member-info">
+                    <h3>Henaz S</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14003</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/Milinda.jpg" alt="Milinda Rose George">
+                </div>
+                <div class="member-info">
+                    <h3>Milinda Rose George</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14004</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="Images/Students/Niladri.jpg" alt="Niladri Karmakar">
+                </div>
+                <div class="member-info">
+                    <h3>Niladri Karmakar</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14005</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/Smera.jpg" alt="Smera Sohan">
+                </div>
+                <div class="member-info">
+                    <h3>Smera Sohan</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14006</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/vaishnavi.jpg" alt="Ubale Vaishnavi Sunil">
+                </div>
+                <div class="member-info">
+                    <h3>Ubale Vaishnavi Sunil</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14008</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/Vedant.jpg" alt="Vedant Shankar Pandey">
+                </div>
+                <div class="member-info">
+                    <h3>Vedant Shankar Pandey</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14009</p>
+                    </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/vishnupriya.jpg" alt="Vishnupriya Sajeev">
+                </div>
+                <div class="member-info">
+                    <h3>Vishnupriya Sajeev</h3>
+                    <p><strong>Enrollment Number:</strong> PH23MSCST14010</p>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Members for 2022 -->
+        <div class="members-list" data-year="2022">
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Students/Lakshmi Raja.jpg" alt="Lakshmi Raja">
+                </div>
+                <div class="member-info">
+                    <h3>Lakshmi Raja</h3>
+                    <p><strong>Enrollment Number:</strong> MP22MSCST14001</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Back to top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+            <path d="M5 15l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+
+
+<!-- footer -->
+<!-- Footer Section -->
+<footer class="main-footer">
+  <!-- First Row: Links -->
+  <div class="footer-row footer-links-row">
+    <div class="footer-col">
+      <h4 class="footer-header">Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-header">Information</h4>
+      <ul>
+        <li><a href="#privacypolicy">Privacy Policy</a></li>
+        <li><a href="#terms&conditions">Terms & Conditions</a></li>
+       
+      </ul>
+    </div>
+    <div class="footer-col" id = "contact">
+      <h4 class="footer-header">Contact Us</h4>
+      <ul>
+        <li>502, Physics Building, IIT Hyderabad</li>
+        <li>Sangareddy, Hyderabad, Telangana, India</li>
+        <li><a href="tel:+919131218704">+91 91 3121 8704</a></li>
+        <li><a href="mailto:medphy@iith.ac.in">ph23mscst14005@iith.ac.in</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Second Row: Logo | Social | Map -->
+  <div class="footer-row footer-brand-row">
+    <div class="footer-col logo-col">
+      <a href="https://www.iith.ac.in/" target="_blank" rel="noopener" class="logo-block-link">
+         <div class="logo-block">
+         <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/Untitled_design__7_-removebg-preview.png"
+           alt="IITH Logo"
+           class="footer-logo">
+        <div class="branding-text">
+        <span class="branding-title">IIT Hyderabad</span>
+        <span class="branding-subtitle">Medical Physics</span>
+        </div>
+    </div>
+        </a>
+   </div>
+    <div class="footer-col social-col">
+      <div class="footer-social-row">
+        <span class="footer-social-label">Connect With Us</span>
+        <div class="social-icons">
+  <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener" class="circle-icon" aria-label="Facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+  <a href="https://www.twitter.com/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="Twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="Instagram">
+    <i class="fa fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="LinkedIn">
+    <i class="fa fa-linkedin"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+    <div class="footer-col map-col">
+      <div class="map-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.4524679812243!2d78.12307460025795!3d17.59582813681556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbefdc136bffbb%3A0x73414ff6594c9191!2sIndian%20Institute%20of%20Technology%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1748819010259!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    &copy; 2025 IIT Hyderabad | Medical Physics | Designed & Developed by Niladri Karmakar
+  </div>
+  <div class="footer-copyright-mobile">
+    &copy; 2025 IIT Hyderabad | Medical Physics
+  </div>
+</footer>
+
+
+
+
+   <!-- Font icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <script src="students.js"></script>
+</body>
+</html>
