@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Members Page</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+<body>
+
+
+    <!-- Navigation -->
+<nav class="main-nav">
+    <div class="brand">
+        <a href="index.html" class="brand-link" title="Go to homepage">
+      <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="Logo" class="logo" />
+      <div class="brand-text">
+        <span class="brand-title">Indian Institute of Technology</span>
+        <span class="brand-subtitle">Medical Physics</span>
+      </div>
+      </a>
+    </div>
+
+    
+<!-- Hamburger icon (only visible on mobile) -->
+<button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+
+    <ul class="nav-menu">
+      <li><a href="index.html#about">About</a></li>
+      <li class="dropdown">
+        <a href="#courses">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#people">People</a>
+        <ul class="dropdown-menu">
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="students.html">Students</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+
+
+
+<!-- Side Navigation Overlay (Mobile Only) -->
+<aside class="mobile-sidenav" id="mobileSidenav" aria-hidden="true">
+  <div class="sidenav-header">
+    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="Logo" class="sidenav-logo" />
+    <div>
+      <div class="sidenav-title">Indian Institute of Technology</div>
+      <div class="sidenav-subtitle">Medical Physics</div>
+    </div>
+    <button class="sidenav-close" id="sidenavClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav class="sidenav-menu" aria-label="Mobile Navigation">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li>
+        <button class="sidenav-dropdown-btn" aria-expanded="false">Courses</button>
+        <ul class="sidenav-dropdown-list">
+          <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="sidenav-dropdown-btn" aria-expanded="false">People</button>
+        <ul class="sidenav-dropdown-list">
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="#students.html">Students</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+  <div class="sidenav-footer">
+    <a href="https://www.iith.ac.in/" target="_blank" class="sidenav-footer-logo-link" aria-label="Visit IIT Hyderabad">
+    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="IIT Hyderabad Logo" class="sidenav-footer-logo" />
+  </a>
+  <div class="sidenav-connect-title">Connect With Us</div>
+  <hr class="sidenav-footer-divider" />
+  <div class="sidenav-socials">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="sidenav-social"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="sidenav-social"><i class="fa fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="sidenav-social"><i class="fa fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="sidenav-social"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <div class="sidenav-copyright">
+    © 2025 IIT Hyderabad | Medical Physics<br>
+    Designed &amp; Developed by Niladri Karmakar
+  </div>
+</div>
+
+</div>
+
+</aside>
+<!-- Overlay for darkening background -->
+<div class="sidenav-overlay" id="sidenavOverlay"></div>
+
+
+
+    <!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+       <div class="welcome-message">
+            <h1>Welcome to Medical Physics</h1>
+            <p>Indian Institute of Technology, Hyderabad</p>
+            <div class="members">
+    <h2 class="title">Faculty Members</h2>
+</div>
+        </div>
+    </div>
+</div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Faculty Selector Row -->
+<div class="faculty-section">
+  <div class="faculty-tabs-container">
+    <ul class="faculty-tabs">
+      <li class="faculty-tab active" data-faculty="iit">IIT Faculty</li>
+      <li class="faculty-tab" data-faculty="biachri">BIACHRI Faculty</li>
+    </ul>
+    <div class="tab-base-bar"></div>
+  </div>
+
+        <!-- Members Grid -->
+        <div class="members-container">
+            <!-- IIT Faculty Members -->
+            <div class="faculty-group active" data-faculty="iit">
+
+                <article class="member-card">
+                    <div class="member-card-content">
+                        
+                        <!-- 1st Column: Image, Name, Designation -->
+                        <div class="member-card-section">
+                            <img src="/Users/niladri/Desktop/MedPhy 2/Images/Proff./unknown.png" alt="Dr. Anjan Giri">
+                            <h3 class="member-name">Dr. Anjan Giri</h3>
+                            <p class="member-designation">Professor</p>
+                        </div>
+                        
+                        <!-- 2nd Column: Research Area, Website -->
+                        <div class="member-card-section">
+                         <div class="member-research">
+                             <div class="research-header">Area of Research</div>
+                              <div class="research-description">
+                                 Understanding the baryon asymmetry of the Universe and deciphering signals of new physics (BSM) using flavour and neutrino physics.
+                              </div>
+                         </div>
+                         <a href="https://people.iith.ac.in/giria/" class="member-website">Visit Profile</a>
+                        </div>
+
+
+                        <!-- 3rd Column: Contact, Address -->
+                        <div class="member-card-section">
+                            <div class="icon-text">
+                                <div class="icon email-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:giria@phy.iith.ac.in">giria@phy.iith.ac.in</a>
+                            </div>
+                         <div class="icon-text">
+                                <div class="icon phone-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                             <a href="tel:+9104023016701">+91 040 2301 6701</a>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon location-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <span>PH-306, Physics Department, IIT Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+<article class="member-card">
+                    <div class="member-card-content">
+                        
+                        <!-- 1st Column: Image, Name, Designation -->
+                        <div class="member-card-section">
+                            <img src="/Users/niladri/Desktop/MedPhy 2/Images/Proff./unknown.png" alt="Dr. Anjan Giri">
+                            <h3 class="member-name">Dr. Anjan Giri</h3>
+                            <p class="member-designation">Professor</p>
+                        </div>
+                        
+                        <!-- 2nd Column: Research Area, Website -->
+                        <div class="member-card-section">
+                         <div class="member-research">
+                             <div class="research-header">Area of Research</div>
+                              <div class="research-description">
+                                 Understanding the baryon asymmetry of the Universe and deciphering signals of new physics (BSM) using flavour and neutrino physics.
+                              </div>
+                         </div>
+                         <a href="https://people.iith.ac.in/giria/" class="member-website">Visit Profile</a>
+                        </div>
+
+
+                        <!-- 3rd Column: Contact, Address -->
+                        <div class="member-card-section">
+                            <div class="icon-text">
+                                <div class="icon email-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:giria@phy.iith.ac.in">giria@phy.iith.ac.in</a>
+                            </div>
+                         <div class="icon-text">
+                                <div class="icon phone-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                             <a href="tel:+9104023016701">+91 040 2301 6701</a>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon location-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <span>PH-306, Physics Department, IIT Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+<article class="member-card">
+                    <div class="member-card-content">
+                        
+                        <!-- 1st Column: Image, Name, Designation -->
+                        <div class="member-card-section">
+                            <img src="/Users/niladri/Desktop/MedPhy 2/Images/Proff./unknown.png" alt="Dr. Anjan Giri">
+                            <h3 class="member-name">Dr. Anjan Giri</h3>
+                            <p class="member-designation">Professor</p>
+                        </div>
+                        
+                        <!-- 2nd Column: Research Area, Website -->
+                        <div class="member-card-section">
+                         <div class="member-research">
+                             <div class="research-header">Area of Research</div>
+                              <div class="research-description">
+                                 Understanding the baryon asymmetry of the Universe and deciphering signals of new physics (BSM) using flavour and neutrino physics.
+                              </div>
+                         </div>
+                         <a href="https://people.iith.ac.in/giria/" class="member-website">Visit Profile</a>
+                        </div>
+
+
+                        <!-- 3rd Column: Contact, Address -->
+                        <div class="member-card-section">
+                            <div class="icon-text">
+                                <div class="icon email-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:giria@phy.iith.ac.in">giria@phy.iith.ac.in</a>
+                            </div>
+                         <div class="icon-text">
+                                <div class="icon phone-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                             <a href="tel:+9104023016701">+91 040 2301 6701</a>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon location-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <span>PH-306, Physics Department, IIT Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+            </div>
+
+            <!-- BIACHRI Faculty Members -->
+            <div class="faculty-group" data-faculty="biachri">
+                
+
+
+<article class="member-card">
+                    <div class="member-card-content">
+                        
+                        <!-- 1st Column: Image, Name, Designation -->
+                        <div class="member-card-section">
+                            <img src="/Users/niladri/Desktop/MedPhy 2/Images/Proff./unknown.png" alt="Dr. Anjan Giri">
+                            <h3 class="member-name">Dr. Anjan Giri</h3>
+                            <p class="member-designation">Professor</p>
+                        </div>
+                        
+                        <!-- 2nd Column: Research Area, Website -->
+                        <div class="member-card-section">
+                         <div class="member-research">
+                             <div class="research-header">Area of Research</div>
+                              <div class="research-description">
+                                 Understanding the baryon asymmetry of the Universe and deciphering signals of new physics (BSM) using flavour and neutrino physics.
+                              </div>
+                         </div>
+                         <a href="https://people.iith.ac.in/giria/" class="member-website">Visit Profile</a>
+                        </div>
+
+
+                        <!-- 3rd Column: Contact, Address -->
+                        <div class="member-card-section">
+                            <div class="icon-text">
+                                <div class="icon email-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:giria@phy.iith.ac.in">giria@phy.iith.ac.in</a>
+                            </div>
+                         <div class="icon-text">
+                                <div class="icon phone-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                             <a href="tel:+9104023016701">+91 040 2301 6701</a>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon location-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <span>PH-306, Physics Department, IIT Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+                <article class="member-card">
+                    <div class="member-card-content">
+                        
+                        <!-- 1st Column: Image, Name, Designation -->
+                        <div class="member-card-section">
+                            <img src="/Users/niladri/Desktop/MedPhy 2/Images/Proff./unknown.png" alt="Dr. Anjan Giri">
+                            <h3 class="member-name">Dr. Anjan Giri</h3>
+                            <p class="member-designation">Professor</p>
+                        </div>
+                        
+                        <!-- 2nd Column: Research Area, Website -->
+                        <div class="member-card-section">
+                         <div class="member-research">
+                             <div class="research-header">Area of Research</div>
+                              <div class="research-description">
+                                 Understanding the baryon asymmetry of the Universe and deciphering signals of new physics (BSM) using flavour and neutrino physics.
+                              </div>
+                         </div>
+                         <a href="https://people.iith.ac.in/giria/" class="member-website">Visit Profile</a>
+                        </div>
+
+
+                        <!-- 3rd Column: Contact, Address -->
+                        <div class="member-card-section">
+                            <div class="icon-text">
+                                <div class="icon email-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:giria@phy.iith.ac.in">giria@phy.iith.ac.in</a>
+                            </div>
+                         <div class="icon-text">
+                                <div class="icon phone-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                             <a href="tel:+9104023016701">+91 040 2301 6701</a>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon location-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <span>PH-306, Physics Department, IIT Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+<article class="member-card">
+                    <div class="member-card-content">
+                        
+                        <!-- 1st Column: Image, Name, Designation -->
+                        <div class="member-card-section">
+                            <img src="/Users/niladri/Desktop/MedPhy 2/Images/Proff./unknown.png" alt="Dr. Anjan Giri">
+                            <h3 class="member-name">Dr. Anjan Giri</h3>
+                            <p class="member-designation">Professor</p>
+                        </div>
+                        
+                        <!-- 2nd Column: Research Area, Website -->
+                        <div class="member-card-section">
+                         <div class="member-research">
+                             <div class="research-header">Area of Research</div>
+                              <div class="research-description">
+                                 Understanding the baryon asymmetry of the Universe and deciphering signals of new physics (BSM) using flavour and neutrino physics.
+                              </div>
+                         </div>
+                         <a href="https://people.iith.ac.in/giria/" class="member-website">Visit Profile</a>
+                        </div>
+
+
+                        <!-- 3rd Column: Contact, Address -->
+                        <div class="member-card-section">
+                            <div class="icon-text">
+                                <div class="icon email-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:giria@phy.iith.ac.in">giria@phy.iith.ac.in</a>
+                            </div>
+                         <div class="icon-text">
+                                <div class="icon phone-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                             <a href="tel:+9104023016701">+91 040 2301 6701</a>
+                            </div>
+                            <div class="icon-text">
+                                <div class="icon location-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <span>PH-306, Physics Department, IIT Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+<!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Back to top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+            <path d="M5 15l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+
+
+<!-- footer -->
+<!-- Footer Section -->
+<footer class="main-footer">
+  <!-- First Row: Links -->
+  <div class="footer-row footer-links-row">
+    <div class="footer-col">
+      <h4 class="footer-header">Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-header">Information</h4>
+      <ul>
+        <li><a href="#privacypolicy">Privacy Policy</a></li>
+        <li><a href="#terms&conditions">Terms & Conditions</a></li>
+       
+      </ul>
+    </div>
+    <div class="footer-col" id = "contact">
+      <h4 class="footer-header">Contact Us</h4>
+      <ul>
+        <li>502, Physics Building, IIT Hyderabad</li>
+        <li>Sangareddy, Hyderabad, Telangana, India</li>
+        <li><a href="tel:+919131218704">+91 91 3121 8704</a></li>
+        <li><a href="mailto:medphy@iith.ac.in">ph23mscst14005@iith.ac.in</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Second Row: Logo | Social | Map -->
+  <div class="footer-row footer-brand-row">
+    <div class="footer-col logo-col">
+      <a href="https://www.iith.ac.in/" target="_blank" rel="noopener" class="logo-block-link">
+         <div class="logo-block">
+         <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/Untitled_design__7_-removebg-preview.png"
+           alt="IITH Logo"
+           class="footer-logo">
+        <div class="branding-text">
+        <span class="branding-title">IIT Hyderabad</span>
+        <span class="branding-subtitle">Medical Physics</span>
+        </div>
+    </div>
+        </a>
+   </div>
+    <div class="footer-col social-col">
+      <div class="footer-social-row">
+        <span class="footer-social-label">Connect With Us</span>
+        <div class="social-icons">
+  <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener" class="circle-icon" aria-label="Facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+  <a href="https://www.twitter.com/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="Twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="Instagram">
+    <i class="fa fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="LinkedIn">
+    <i class="fa fa-linkedin"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+    <div class="footer-col map-col">
+      <div class="map-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.4524679812243!2d78.12307460025795!3d17.59582813681556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbefdc136bffbb%3A0x73414ff6594c9191!2sIndian%20Institute%20of%20Technology%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1748819010259!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    &copy; 2025 IIT Hyderabad | Medical Physics | Designed & Developed by Niladri Karmakar
+  </div>
+  <div class="footer-copyright-mobile">
+    &copy; 2025 IIT Hyderabad | Medical Physics
+  </div>
+</footer>
+
+
+
+   <!-- Font icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <script src="faculty.js"></script>
+</body>
+</html>
