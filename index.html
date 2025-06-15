@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Physics - IIT Hyderabad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Navigation -->
+<nav class="main-nav">
+    <div class="brand">
+        <a href="index.html" class="brand-link" title="Go to homepage">
+      <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="Logo" class="logo" />
+      <div class="brand-text">
+        <span class="brand-title">Indian Institute of Technology</span>
+        <span class="brand-subtitle">Medical Physics</span>
+      </div>
+      </a>
+    </div>
+
+    
+<!-- Hamburger icon (only visible on mobile) -->
+<button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+
+    <ul class="nav-menu">
+      <li><a href="index.html#about">About</a></li>
+      <li class="dropdown">
+        <a href="#courses">Courses</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#people">People</a>
+        <ul class="dropdown-menu">
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="students.html">Students</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+
+
+
+<!-- Side Navigation Overlay (Mobile Only) -->
+<aside class="mobile-sidenav" id="mobileSidenav" aria-hidden="true">
+  <div class="sidenav-header">
+    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="Logo" class="sidenav-logo" />
+    <div>
+      <div class="sidenav-title">Indian Institute of Technology</div>
+      <div class="sidenav-subtitle">Medical Physics</div>
+    </div>
+    <button class="sidenav-close" id="sidenavClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav class="sidenav-menu" aria-label="Mobile Navigation">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li>
+        <button class="sidenav-dropdown-btn" aria-expanded="false">Courses</button>
+        <ul class="sidenav-dropdown-list">
+          <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="sidenav-dropdown-btn" aria-expanded="false">People</button>
+        <ul class="sidenav-dropdown-list">
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="students.html">Students</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+  <div class="sidenav-footer">
+    <a href="https://www.iith.ac.in/" target="_blank" class="sidenav-footer-logo-link" aria-label="Visit IIT Hyderabad">
+    <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/images-removebg-preview.png" alt="IIT Hyderabad Logo" class="sidenav-footer-logo" />
+  </a>
+  <div class="sidenav-connect-title">Connect With Us</div>
+  <hr class="sidenav-footer-divider" />
+  <div class="sidenav-socials">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="sidenav-social"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="sidenav-social"><i class="fa fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="sidenav-social"><i class="fa fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="sidenav-social"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <div class="sidenav-copyright">
+    © 2025 IIT Hyderabad | Medical Physics<br>
+    Designed &amp; Developed by Niladri Karmakar
+  </div>
+</div>
+
+</div>
+
+</aside>
+<!-- Overlay for darkening background -->
+<div class="sidenav-overlay" id="sidenavOverlay"></div>
+  
+  
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>M.Sc Medical Physics</h1>
+            <p>IIT Hyderabad collaboration with BIACH-RI</p>
+        </div>
+        <!-- HERO SLIDER START -->
+        <section class="hero-slider-container">
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <img src="images/gallery/BNight.jpg" alt="Medical Physics">
+                    <div class="hero-slide-content">
+                        <h1>M.Sc Medical Physics</h1>
+                        <p>IIT Hyderabad</p>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="images/gallery/BCDay.jpg" alt="Medical Physics">
+                    <div class="hero-slide-content">
+                        <h1>M.Sc Medical Physics</h1>
+                        <p>Physics Department</p>
+                    </div>
+                </div>
+                <!-- Add more .hero-slide blocks as needed -->
+                <button class="hero-arrow hero-arrow-left">&#10094;</button>
+                <button class="hero-arrow hero-arrow-right">&#10095;</button>
+                <div class="hero-dots"></div>
+            </div>
+        </section>
+        <!-- HERO SLIDER END -->
+    </header>
+
+    <!-- Announcement Bar -->
+    <section class="announcement-bar">
+        <div class="marquee" id="marquee">
+            <span class="pill new-pill">New</span>
+            <a href="#admissions" class="announcement-link">Admissions 2025 Open - Apply Now</a>
+            <span class="spacer"></span>
+            <span class="pill new-pill">New</span>
+            <a href="#research-paper" class="announcement-link">Research Paper Medical Physics</a>
+            <span class="spacer"></span>
+            <span class="pill new-pill">New</span>
+            <a href="#open-house" class="announcement-link">Medical Physics Industry Hospital lectures</a>
+            <span class="spacer"></span>
+            <span class="pill new-pill">New</span>
+            <a href="#internship-results" class="announcement-link">Summer Internship 2025</a>
+        </div>
+    </section>
+
+    <!-- Main Section: News - About - Updates -->
+    <section class="about-news-updates-section" id="news-updates">
+        <div class="container about-news-updates-grid">
+            <!-- Latest News (Left) -->
+            <div class="news-col">
+                <div style="position: sticky; top: 0; background: #fff; z-index: 2;">
+                    <h2 class="section-title">Latest News</h2>
+                </div>
+                <div class="news-list" style="max-height: 400px; overflow-y: auto;">
+                    <!-- Repeat news-item as needed -->
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            
+                            </div>
+                            <a href="#SIP2025" class="news-title-link">Summer Intership 2025</a>
+                            <p>Students selected for Summer Internship June - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            
+                            </div>
+                            <a href="#LIST" class="news-title-link">MSc Admission List</a>
+                            <p>MSc Medical Physics Admission list JAM - 2025 Result</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                                
+                            </div>
+                            <a href="#SIP2025" class="news-title-link">Summer Intership 2025</a>
+                            <p>Students selected for Summer Internship June - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                               
+                            </div>
+                            <a href="#LIST" class="news-title-link">MSc Admission List</a>
+                            <p>MSc Medical Physics Admission list JAM - 2025 Result</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                                
+                            </div>
+                            <a href="#SIP2025" class="news-title-link">Summer Intership 2025</a>
+                            <p>Students selected for Summer Internship June - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#LIST" class="news-title-link">MSc Admission List</a>
+                            <p>MSc Medical Physics Admission list JAM - 2025 Result</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#SIP2025" class="news-title-link">Summer Intership 2025</a>
+                            <p>Students selected for Summer Internship June - 2025 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiippppppppppppppppppppppppppppppppppppppppp</p>
+                        </div>
+                    </div>
+                    <!-- Add more news items here -->
+                </div>
+            </div>
+            <!-- About Program (Center) -->
+            <div class="about-center" id="about">
+                <div class="about-bg">
+                    <h2>About the Program</h2>
+                    <div class="about-main">
+                        <p id="about-short">
+                            The M.Sc in Medical Physics at IIT Hyderabad is a rigorous, interdisciplinary program designed to train the next generation of leaders in medical physics. Our curriculum blends advanced physics, clinical applications, and hands-on research, in collaboration with leading hospitals and research institutes.
+                        </p>
+                        <div id="about-more" class="about-more">
+                            <p>
+                                The program offers students access to state-of-the-art laboratories, clinical training, and research opportunities with international faculty. Graduates have a 100% placement record in hospitals, research labs, and academia.
+                            </p>
+                        </div>
+                        <button id="about-toggle" class="read-more-btn">Read More</button>
+                    </div>
+                    <div class="vision-mission-row">
+                        <div class="vision-mission-card" id="vision">
+                            <h3>Vision</h3>
+                            <p>
+                                To be a global leader in medical physics education, research, and innovation, contributing to advancements in healthcare and human well-being.
+                            </p>
+                        </div>
+                        <div class="vision-mission-card" id="mission">
+                            <h3>Mission</h3>
+                            <p>
+                                To provide world-class education and research opportunities in medical physics, foster interdisciplinary collaboration, and develop skilled professionals who drive progress in healthcare technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Updates (Right) -->
+            <div class="news-col">
+                <div style="position: sticky; top: 0; background: #fff; z-index: 2;">
+                    <h2 class="section-title">Latest Updates</h2>
+                </div>
+                <div class="news-list" style="max-height: 400px; overflow-y: auto;">
+                    <!-- Repeat news-item as needed -->
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#LIST" class="news-title-link">MSc Admission List</a>
+                            <p>MSc Medical Physics Admission list JAM - 2025 Result</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#SIP2025" class="news-title-link">Summer Intership 2025</a>
+                            <p>Students selected for Summer Internship June - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#LIST" class="news-title-link">MSc Admission List</a>
+                            <p>MSc Medical Physics Admission list JAM - 2025 Result</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#SIP2025" class="news-title-link">Summer Intership 2025</a>
+                            <p>Students selected for Summer Internship June - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#LIST" class="news-title-link">MSc Admission List</a>
+                            <p>MSc Medical Physics Admission list JAM - 2025 Result</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#SIP2025" class="news-title-link">Summer Intership 2025</a>
+                            <p>Students selected for Summer Internship June - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta-row">
+                                <span class="news-meta">20 May 2025</span>
+                                <span class="pill new-pill small">New</span>
+                            </div>
+                            <a href="#LIST" class="news-title-link">MSc Admission List</a>
+                            <p>MSc Medical Physics Admission list JAM - 2025 Result</p>
+                        </div>
+                    </div>
+                    <!-- Add more update items here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="faq-header">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the admission requirements?</span>
+                        <span class="faq-arrow"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Bachelor's degree in Physics or related discipline, with at least 60% marks and JAM ranking along with Interview. See our admissions page for details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the career prospects?</span>
+                        <span class="faq-arrow"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Graduates work in hospitals, research labs, academia, and medical technology industries.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there campus accommodation?</span>
+                        <span class="faq-arrow"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, IIT Hyderabad provides modern hostels for all students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- footer -->
+<!-- Footer Section -->
+<footer class="main-footer">
+  <!-- First Row: Links -->
+  <div class="footer-row footer-links-row">
+    <div class="footer-col">
+      <h4 class="footer-header">Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="https://www.iith.ac.in/assets/files/brochures/july2024/Flyer_MP2024.pdf">Brochure</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-header">Information</h4>
+      <ul>
+        <li><a href="#privacypolicy">Privacy Policy</a></li>
+        <li><a href="#terms&conditions">Terms & Conditions</a></li>
+       
+      </ul>
+    </div>
+    <div class="footer-col" id = "contact">
+      <h4 class="footer-header">Contact Us</h4>
+      <ul>
+        <li>502, Physics Building, IIT Hyderabad</li>
+        <li>Sangareddy, Hyderabad, Telangana, India</li>
+        <li><a href="tel:+919131218704">+91 91 3121 8704</a></li>
+        <li><a href="mailto:medphy@iith.ac.in">ph23mscst14005@iith.ac.in</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Second Row: Logo | Social | Map -->
+  <div class="footer-row footer-brand-row">
+    <div class="footer-col logo-col">
+      <a href="https://www.iith.ac.in/" target="_blank" rel="noopener" class="logo-block-link">
+         <div class="logo-block">
+         <img src="/Users/niladri/Desktop/MedPhy 2/Images/Logos/Untitled_design__7_-removebg-preview.png"
+           alt="IITH Logo"
+           class="footer-logo">
+        <div class="branding-text">
+        <span class="branding-title">IIT Hyderabad</span>
+        <span class="branding-subtitle">Medical Physics</span>
+        </div>
+    </div>
+        </a>
+   </div>
+    <div class="footer-col social-col">
+      <div class="footer-social-row">
+        <span class="footer-social-label">Connect With Us</span>
+        <div class="social-icons">
+  <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener" class="circle-icon" aria-label="Facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+  <a href="https://www.twitter.com/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="Twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="Instagram">
+    <i class="fa fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/YourProfile" target="_blank" rel="noopener" class="circle-icon" aria-label="LinkedIn">
+    <i class="fa fa-linkedin"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+    <div class="footer-col map-col">
+      <div class="map-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.4524679812243!2d78.12307460025795!3d17.59582813681556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbefdc136bffbb%3A0x73414ff6594c9191!2sIndian%20Institute%20of%20Technology%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1748819010259!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    &copy; 2025 IIT Hyderabad | Medical Physics | Designed & Developed by Niladri Karmakar
+  </div>
+  <div class="footer-copyright-mobile">
+    &copy; 2025 IIT Hyderabad | Medical Physics
+  </div>
+</footer>
+
+
+
+
+   <!-- Font icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script.js"></script>
+</body>
+</html>
